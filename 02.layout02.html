@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layout2</title>
+  <style>
+    body {background-color: rgb(127, 78, 173);} 
+    #wrap {width: 1000px; height: 900px; margin: 0 auto; font-size: 40px; color:#fff; text-align: center; text-transform: uppercase;}
+    #header {width: 1000px; height: 100px; background-color: rgb(133, 94, 170); line-height: 100px;}
+    /* 블록구조를 정렬시킬때 float:left 를 사용함 */
+    #nav {width: 1000px; height: 100px; background-color: rgb(132, 99, 163); line-height: 100px;}
+    #side_left {width: 300px; height: 600px; background-color: rgb(142, 123, 160); float: left; line-height: 600px;}
+    #contents {width: 400px; height: 600px; background-color: rgb(154, 137, 170); float: left; line-height: 600px;}
+    #side_right {width: 300px; height: 600px; background-color: rgb(163, 152, 173); float: left; line-height: 600px;}
+    /* float:left 단축키 fll -> footer밑에 박스들을 모두 floatleft를 써야하는 문제가 생김 clear:both를 써서 float:left영향 차단. */
+    #footer {clear:both; width: 1000px; height: 100px; background-color: rgb(172, 167, 177); line-height: 100px;}
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header">header</div>
+    <div id="nav">nav</div>
+    <div id="side_left">side_left</div>
+    <div id="contents">contents</div>
+    <div id="side_right">side_right</div>
+    <div id="footer">footer</div>
+  </div>
+</body>
+</html>
